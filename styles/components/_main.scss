@@ -61,7 +61,7 @@ header{
 }
 
 main{
-    padding: 100px 150px;
+    padding: 130px 150px;
     .opening{
         h1{
             font-size: 5rem;
@@ -99,4 +99,41 @@ main{
             
         }
     }
+
+    .grid-fadeup{
+        padding-top: 270px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        row-gap: 100px;
+        column-gap: 200px;
+        .fade-up-grid{
+            border: 1px solid $headerText;
+            height: auto;
+            background-color: #1a2130;
+            padding: 40px 30px;
+            .fadeup-flex{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                i{
+                    color: $headerUserColor;
+                    font-size: 2.5rem;
+                }
+                h3{
+                    color: $headerUserColor;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+            }
+            p{
+                color: $headerText;
+                font-size: 1.2rem;
+                line-height: 1.2;
+                padding-top: 30px;
+            }
+        }
+    }
+    
+
 }
