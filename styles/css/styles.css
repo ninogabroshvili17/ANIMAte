@@ -56,21 +56,22 @@ a {
 body {
   font-family: monospace;
   background-color: #0e1421;
+  height: 100vh;
 }
 
 header {
-  padding: 30px 0;
+  padding: 30px 150px;
   border-bottom: 2px solid #f2f2f2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 header h1 {
+  animation: jackInTheBox 2s;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
   color: #f2f2f2;
-  animation: bounce 2s;
 }
 header nav ul {
   color: #f2f2f2;
@@ -93,7 +94,11 @@ header nav ul li .fa-solid {
 header nav ul li .user {
   color: rgb(187, 48, 48);
 }
+header nav ul .heartbeat:hover {
+  animation: heartBeat 2s infinite;
+}
 header nav ul .get-started {
+  animation: pulse 2s infinite;
   border: 1px solid white;
   padding: 15px 10px;
   border-radius: 10px;
@@ -102,4 +107,41 @@ header nav ul .get-started {
 header nav ul .get-started:hover {
   color: #0e1421;
   background-color: #f2f2f2;
+}
+
+main {
+  padding: 100px 150px;
+}
+main .opening h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #f2f2f2;
+  animation: fadeInLeft 2s;
+}
+main .opening h2 {
+  color: #f2f2f2;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 40px;
+  animation: fadeInLeft 2s;
+}
+main .opening .learn-more-btn {
+  animation: pulse 2s infinite;
+  font-weight: 500;
+  border: 1px solid rgb(187, 48, 48);
+  padding: 20px 15px;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 50px;
+  background-color: rgb(187, 48, 48);
+  cursor: pointer;
+  color: #0e1421;
+  font-size: 1.3rem;
+  transition: background-color 0.2s;
+}
+main .opening .learn-more-btn:hover {
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: #0e1421;
 }/*# sourceMappingURL=styles.css.map */

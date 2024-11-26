@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="./styles/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1 class="animate__bounce"><a href="./index.html">vista.io</a></h1>
+        <h1><a href="./index.html">vista.io</a></h1>
 
-        <nav>
+        <nav>   
             <ul>
-                <li class="pulse animate__pulse">Solutions</li>
-                <li>Vision</li>
-                <li>Programs</li>
-                <li>Blog</li>
+                <li class="heartbeat">Solutions</li>
+                <li class="heartbeat">Vision</li>
+                <li class="heartbeat">Programs</li>
+                <li class="heartbeat">Blog</li>
                 <li>
                     <div>
                         <i class="fa-solid fa-user"></i>
@@ -32,7 +33,23 @@
         </nav>
     </header>
 
+    <main>
+        <section class="opening">
+            <h1>The New Standard<br>in Data Analysis</h1>
+            <h2>Use Data to Get a 360-Degree<br>View of Your Business</h2>
+            <div class="learn-more-btn">
+                <div class="fade-right">
+                    <span>Learn More</span>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
     
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
