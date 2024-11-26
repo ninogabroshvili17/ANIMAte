@@ -68,7 +68,9 @@ header {
 header h1 {
   text-transform: uppercase;
   font-size: 2rem;
+  font-weight: 700;
   color: #f2f2f2;
+  animation: bounce 2s;
 }
 header nav ul {
   color: #f2f2f2;
@@ -78,7 +80,12 @@ header nav ul {
 }
 header nav ul li {
   font-size: 1.2rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+header nav ul li:hover {
+  color: rgb(187, 48, 48);
 }
 header nav ul li .fa-solid {
   color: rgb(187, 48, 48);
@@ -90,4 +97,9 @@ header nav ul .get-started {
   border: 1px solid white;
   padding: 15px 10px;
   border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+header nav ul .get-started:hover {
+  color: #0e1421;
+  background-color: #f2f2f2;
 }/*# sourceMappingURL=styles.css.map */
